@@ -11,6 +11,7 @@ apt install -y neovim git-flow curl zsh
 ###
 # Install oh my zsh
 ###
+
 if [ -d "${HOME}/.oh-my-zsh" ]; then
 	printf "oh-my-zsh is already installed\n"
 else
@@ -21,4 +22,12 @@ fi
 ###
 # Installing dotfiles
 ###
+
 ln -sf "$(pwd)/zsh/aliases.zsh" "${HOME}/.oh-my-zsh/custom/aliases.zsh"
+ln -sf "$(pwd)/zsh/my.zsh-theme" "${HOME}/.oh-my-zsh/themes/my.zsh-theme"
+
+###
+# Set zsh as default shell
+###
+
+chsh -s $(which zsh)
