@@ -25,6 +25,8 @@ fi
 
 ln -sf "$(pwd)/zsh/aliases.zsh" "${HOME}/.oh-my-zsh/custom/aliases.zsh"
 ln -sf "$(pwd)/zsh/my.zsh-theme" "${HOME}/.oh-my-zsh/themes/my.zsh-theme"
+ln -sf "$(pwd)/zsh/.zshrc" "${HOME}/.zshrc"
+
 
 ###
 # Set zsh as default shell
