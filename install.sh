@@ -33,3 +33,5 @@ ln -sf "$(pwd)/zsh/.zshrc" "${HOME}/.zshrc"
 ###
 
 chsh -s $(which zsh)
+
+echo 'Finished!'
