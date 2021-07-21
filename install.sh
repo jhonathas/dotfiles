@@ -26,8 +26,9 @@ fi
 ln -sf "$(pwd)/zsh/aliases.zsh" "${HOME}/.oh-my-zsh/custom/aliases.zsh"
 ln -sf "$(pwd)/zsh/my.zsh-theme" "${HOME}/.oh-my-zsh/themes/my.zsh-theme"
 ln -sf "$(pwd)/zsh/.zshrc" "${HOME}/.zshrc"
+rm -rf "${HOME}/.vscode-server"
 mkdir "${HOME}/shared/.vscode-server"
-ln -s "${HOME}/shared/.vscode-server" "${HOME}/.vscode-server"
+ln -sf "${HOME}/shared/.vscode-server" "${HOME}/.vscode-server"
 
 ###
 # Set zsh as default shell
