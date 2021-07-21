@@ -26,7 +26,7 @@ fi
 ln -sf "$(pwd)/zsh/aliases.zsh" "${HOME}/.oh-my-zsh/custom/aliases.zsh"
 ln -sf "$(pwd)/zsh/my.zsh-theme" "${HOME}/.oh-my-zsh/themes/my.zsh-theme"
 ln -sf "$(pwd)/zsh/.zshrc" "${HOME}/.zshrc"
-mkdir "$(pwd)/shared/.vscode-server"
+mkdir "${HOME}/shared/.vscode-server"
 ln -sf "$(pwd)/shared/.vscode-server" "${HOME}/.vscode-server"
 
 ###
